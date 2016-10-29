@@ -1,10 +1,15 @@
 <template>
   	<div id="app">
   		<Home></Home>
+  		<el-button>默认按钮</el-button>
+		<el-button type="primary">主要按钮</el-button>
+		<el-button type="text">文字按钮</el-button>
+		<el-button type="primary" icon="search">搜索</el-button>
   	</div>
 </template>
 
 <script>
+
 import Home from './components/Home'
 
 export default {
@@ -15,6 +20,9 @@ export default {
 </script>
 
 <style lang='sass'>
+
+@import url('../node_modules/element-ui/lib/theme-default/index.css');
+
 html {
   	height: 100%;
 	body {

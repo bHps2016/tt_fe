@@ -32,6 +32,10 @@ module.exports = {
 				test: /\.(html|tpl)$/, 
 				loader: 'html-loader' 
 			},
+			{test: /\.eot/,loader : 'file?prefix=font/'},
+			{test: /\.woff/,loader : 'file?prefix=font/&limit=10000&mimetype=application/font-woff'},
+			{test: /\.ttf/, loader : 'file?prefix=font/'}, 
+			{test: /\.svg/, loader : 'file?prefix=font/'},
 			{
 				test: /\.(png|jpg|gif|svg)$/,
 				loader: 'file?limit=8192',

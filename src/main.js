@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import App from './App';
+import ElementUI from 'element-ui'
+
+Vue.use(ElementUI)
+
+
 /* eslint-disable no-new */
-console.log('园')
 new Vue({
   el: '#app',
   render: h => h(App)

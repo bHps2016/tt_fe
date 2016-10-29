@@ -13,8 +13,9 @@ module.exports = {
 		filename: '[name]'
 	},
 	devServer: {
-         quiet: true, 
-         noInfo: true
+        quiet: true, 
+        historyApiFallback: true,
+    	noInfo: true
     },
 	module: {
 	    loaders: [
